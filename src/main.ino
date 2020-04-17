@@ -255,7 +255,7 @@ void setup() {
     mqtt_port = WiFiConfig.integer("mqtt_port", 0, 65535, 1883, "MQTT server port");
     mqtt_control_display = WiFiConfig.checkbox("mqtt_control_display", true, "MQTT state ON also sets the display on");
     mqtt_topic = WiFiConfig.string("mqtt_topic", 63, "", "Device topic, eg zigbee2mqtt/devicename");
-    mqtt_topic_key = WiFiConfig.string("mqtt_topic_key", 63, "status", "JSON status key");
+    mqtt_topic_key = WiFiConfig.string("mqtt_topic_key", 63, "state", "JSON status key");
     mqtt_on = WiFiConfig.string("mqtt_on", 63, "ON", "JSON status 'on' value");
     mqtt_off = WiFiConfig.string("mqtt_on", 63, "OFF", "JSON status 'off' value");
     mqtt_topic_get = WiFiConfig.string("mqtt_topic_get", 63, "", "Topic to trigger status request. Leave empty if the status is retained");
