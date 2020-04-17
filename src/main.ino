@@ -325,7 +325,7 @@ void loop() {
 	}
 	static long lasthue = 0;
 	long now = millis();
-	if (now - lasthue > 15) {
+	if (now - lasthue > 25) {
         hue += 1;
         lasthue = now;
     }
